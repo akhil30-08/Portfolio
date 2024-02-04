@@ -1,30 +1,27 @@
 const INFO = {
 	main: {
-		title: "Reactfolio by truethari",
-		name: "Tharindu N.",
-		email: "mail@tharindu.dev",
+		title: "My Portfolio",
+		name: "Akhil Mahajan",
+		email: "akhilm.jmu@yahoo.com",
 		logo: "../logo.png",
 	},
 
 	socials: {
-		twitter: "https://twitter.com/",
-		github: "https://github.com/",
-		linkedin: "https://linkedin.com/",
-		instagram: "https://instagram.com/",
-		stackoverflow: "https://stackoverflow.com/",
-		facebook: "https://facebook.com/",
+		twitter: "https://twitter.com/akhilm_jmu",
+		github: "https://github.com/akhil30-08",
+		linkedin: "https://www.linkedin.com/in/akhil-mahajan-b37a64249/",
 	},
 
 	homepage: {
-		title: "Full-stack web and mobile app developer, and amateur astronaut.",
+		title: "A full stack Web Developer and a Petroleum Engineer",
 		description:
-			"I am a backend developer with expertise in Node.js. I have experience in building scalable, secure and reliable web applications using various frameworks and technologies. I enjoy solving complex problems and learning new skills. I am passionate about creating high-quality code that follows best practices and industry standards. I am always looking for new challenges and opportunities to grow as a developer.",
+			"I am a Full Stack Web Developer and a Petroleum Engineer by qualification. I enjoy coding and Coffee. I love to build and collaborate to make good things. I would like to join you on board and work together to build cool stuffs.",
 	},
 
 	about: {
-		title: "I’m Tharindu N. I live in Sri Lanka, where I design the future.",
+		title: "I’m Akhil Mahajan. I live in what you all call Paradise on Earth - Jammu And Kashmir.   ",
 		description:
-			"I've worked on a variety of projects over the years and I'm proud of the progress I've made. Many of these projects are open-source and available for others to explore and contribute to. If you're interested in any of the projects I've worked on, please feel free to check out the code and suggest any improvements or enhancements you might have in mind. Collaborating with others is a great way to learn and grow, and I'm always open to new ideas and feedback.",
+			"After completing my education in Petroleum Engineering, I started exploring web development which is my favourite thing to do now. Since then I am constantly trying to learn new things from scratch and building side by side. And I cannot wait to join a team of people who are innnovative.",
 	},
 
 	articles: {
@@ -35,48 +32,47 @@ const INFO = {
 
 	projects: [
 		{
-			title: "Project 1",
+			title: "Snapgram",
 			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
+				"A modern social app with a stunning UI with a native mobile feel, a special tech stack, an infinite scroll feature, and amazing performance using React JS, Appwrite, TypeScript, Ten-Stack Query and more.",
+			logo: [
+				"/1_Gh4eaAQU432ZQH7qsVbJ_A.webp",
+				"/62ed0da919dc399d5441e670.png",
+				"/tailwind-css-icon-2048x1229-u8dzt4uh.png",
+			],
 			linkText: "View Project",
-			link: "https://github.com",
+			link: "https://github.com/akhil30-08/SnapGram",
+			liveLinkText: "Live Link",
+			liveLink: "https://snapgram-pi-jet.vercel.app/sign-in",
 		},
-
 		{
-			title: "Project 2",
+			title: "Nike-Tailwind",
 			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
+				"A Nike like React FrontEnd App built with Vite to practice Tailwind. It uses Tailwind for layout and is built using JavaScript. It emphasize on basics of Tailwind CSS",
+			logo: [
+				"/tailwind-css-icon-2048x1229-u8dzt4uh.png",
+				"/react.png",
+				"/vite.jpeg",
+			],
 			linkText: "View Project",
-			link: "https://github.com",
+			link: "https://github.com/akhil30-08/React-Nike-App-with-Tailwind-CSS",
+			liveLinkText: "Live Link",
+			liveLink: "https://nike-reactapp-tailwind.onrender.com",
 		},
-
 		{
-			title: "Project 3",
+			title: "Twitter-Clone",
 			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/html/html.png",
+				"A MERN stack twitter clone web app. It uses Express JS for backend, MongoDB to store database. React-Vite for frontend, bootstrap for designing and axios for calling APIs from backend.",
+			logo: [
+				"/react.png",
+				"/express.png",
+				"/mongodb.webp",
+				"/bootstrap.webp",
+			],
 			linkText: "View Project",
-			link: "https://github.com",
-		},
-
-		{
-			title: "Project 4",
-			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
-			linkText: "View Project",
-			link: "https://github.com",
-		},
-
-		{
-			title: "Project 5",
-			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
-			linkText: "View Project",
-			link: "https://github.com",
+			link: "https://github.com/akhil30-08/MERN-STACK-TWITTER-CLONE",
+			liveLinkText: "Live Link",
+			liveLink: "https://twitter-frontend-2nk4.onrender.com",
 		},
 	],
 };

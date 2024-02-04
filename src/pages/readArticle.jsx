@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { Helmet } from "react-helmet";
-import styled from "styled-components";
 
 import NavBar from "../components/common/navBar";
 import Footer from "../components/common/footer";
@@ -12,8 +11,6 @@ import myArticles from "../data/articles";
 
 import "./styles/readArticle.css";
 
-let ArticleStyle = styled.div``;
-
 const ReadArticle = () => {
 	const navigate = useNavigate();
 	let { slug } = useParams();
@@ -23,11 +20,6 @@ const ReadArticle = () => {
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, [article]);
-
-	ArticleStyle = styled.div`
-		${article().style}
-	`;
-
 	return (
 		<React.Fragment>
 			<Helmet>
@@ -68,7 +60,7 @@ const ReadArticle = () => {
 							</div>
 
 							<div className="read-article-body">
-								<ArticleStyle>{article().body}</ArticleStyle>
+								{article().content}
 							</div>
 						</div>
 					</div>
