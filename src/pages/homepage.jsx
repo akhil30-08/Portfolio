@@ -57,6 +57,7 @@ const Homepage = () => {
 		display: "flex",
 		position: stayLogo ? "fixed" : "relative",
 		top: stayLogo ? "3vh" : "auto",
+		left: stayLogo ? "2" : "auto",
 		zIndex: 999,
 		border: stayLogo ? "1px solid white" : "none",
 		borderRadius: stayLogo ? "50%" : "none",
