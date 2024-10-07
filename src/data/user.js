@@ -47,6 +47,22 @@ const INFO = {
          liveLink: 'https://snapgram-pi-jet.vercel.app/sign-in',
       },
       {
+         title: 'True Feedback',
+         src: '/true-feedback-img.jpg',
+         description:
+            'An anonymous message sending app built with NextJS and NextJS App router for routing.With using TailwindCSS to generate styling for this app. Designed APIs in Next app itself used MongoDB for storing data and used next-auth for authentication.',
+         logo: [
+            'nextjs-icon.svg',
+            '/1_Gh4eaAQU432ZQH7qsVbJ_A.webp',
+            '/tailwind-css-icon-2048x1229-u8dzt4uh.png',
+            '/mongodb.webp',
+         ],
+         linkText: 'View Project',
+         link: 'https://github.com/akhil30-08/True-Feedback-App',
+         liveLinkText: 'Live Link',
+         liveLink: 'https://true-feedback-app.vercel.app/sign-in',
+      },
+      {
          title: 'Nike-Tailwind',
          src: 'nike-tailwind-img.jpg',
          description:
@@ -67,6 +83,17 @@ const INFO = {
          link: 'https://github.com/akhil30-08/MERN-STACK-TWITTER-CLONE',
          liveLinkText: 'Live Link',
          liveLink: 'https://twitter-frontend-2nk4.onrender.com',
+      },
+      {
+         title: 'Quiz App',
+         src: '/quizapp-img.jpg',
+         description:
+            'A quiz app built on react-vite and react-router-dom for routing.It uses public API Open Trivia for collection of questions. Uses redux for state management. With a timer functionality to answer a question in specific time, it shows your correct and wrong answers.',
+         logo: ['/react.png', '/tailwind-css-icon-2048x1229-u8dzt4uh.png', '/redux.svg'],
+         linkText: 'View Project',
+         link: 'https://github.com/akhil30-08/Quiz-App',
+         liveLinkText: 'Live Link',
+         liveLink: 'https://quiz-app-2ynm.vercel.app/',
       },
    ],
 };
