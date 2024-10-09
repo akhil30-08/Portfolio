@@ -103,7 +103,7 @@ export const Carousel = ({ items, initialScroll = 0 }) => {
                   ))}
                </div>
             </div>
-            <div className='flex justify-end gap-2 mr-10'>
+            <div className='flex justify-center gap-4'>
                <button
                   className='relative z-40 h-10 w-10 rounded-full bg-gray-100 flex items-center justify-center disabled:opacity-50'
                   onClick={scrollLeft}
@@ -161,7 +161,7 @@ export const Card = ({ card, index, layout = false }) => {
       <>
          <AnimatePresence>
             {open && (
-               <div className='fixed inset-0 h-screen z-50 overflow-auto'>
+               <div className='inset-0 h-screen z-50 overflow-auto'>
                   <motion.div
                      initial={{ opacity: 0 }}
                      animate={{ opacity: 1 }}
@@ -202,13 +202,13 @@ export const Card = ({ card, index, layout = false }) => {
          <motion.button
             layoutId={layout ? `card-${card.title}` : undefined}
             onClick={handleOpen}
-            className='rounded-3xl bg-gray-100 dark:bg-neutral-900 h-80 w-56 md:h-[40rem] md:w-96 overflow-hidden flex flex-col items-start justify-start relative z-10'
+            className='rounded-3xl bg-gray-100 dark:bg-neutral-900 h-[32rem] w-56 sm:w-48 md:h-[36rem] md:w-96 overflow-hidden flex flex-col items-start justify-start relative z-10'
          >
             <div className='absolute h-full top-0 inset-x-0 bg-gradient-to-b from-black/50 via-transparent to-transparent z-30 pointer-events-none' />
-            <div className='relative z-40 p-8'>
+            <div className='relative z-40 p-8 '>
                <motion.p
                   layoutId={layout ? `title-${card.title}` : undefined}
-                  className='text-slate-700 text-xl md:text-3xl font-semibold max-w-xs text-left [text-wrap:balance] font-sans mt-2 bg-zinc-50 p-1 rounded-md'
+                  className='text-white text-lg md:text-2xl font-semibold max-w-xs text-left[text-wrap:balance] font-sans mt-2 bg-sky-500 px-3 py-2 rounded-md opacity-95 underline shadow-2xl '
                >
                   {card.title}
                </motion.p>
@@ -225,8 +225,8 @@ export const Card = ({ card, index, layout = false }) => {
                   layoutId={layout ? `category-${card.category}` : undefined}
                   className='text-white text-sm md:text-base font-medium font-sans text-left flex'
                >
-                  <div className='bg-slate-200 p-4 rounded-xl shadow-slate-800 shadow-md min-w-56 opacity-95'>
-                     <div className='flex gap-3 mb-2 justify-center '>
+                  <div className='bg-slate-200 p-2 sm:p-4 rounded-xl shadow-slate-800 shadow-md opacity-95'>
+                     <div className='flex gap-1 sm:gap-3 mb-2 sm:justify-center justify-start'>
                         {card.logo.map((logo, i) => (
                            <img
                               src={logo}

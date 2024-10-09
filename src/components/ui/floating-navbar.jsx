@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 export const FloatingNav = ({ navItems, className }) => {
    const { scrollYProgress } = useScroll();
 
-   const [visible, setVisible] = useState(false);
+   const [visible, setVisible] = useState(true);
 
    useMotionValueEvent(scrollYProgress, 'change', (current) => {
       // Check if current is not undefined and is a number
@@ -14,7 +14,7 @@ export const FloatingNav = ({ navItems, className }) => {
          let direction = current - scrollYProgress.getPrevious();
 
          if (scrollYProgress.get() < 0.05) {
-            setVisible(false);
+            setVisible(true);
          } else {
             if (direction < 0) {
                setVisible(true);
@@ -52,7 +52,12 @@ export const FloatingNav = ({ navItems, className }) => {
                      'relative dark:text-neutral-50 items-center flex space-x-1 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500'
                   )}
                >
-                  <span className='block sm:hidden'>{navItem.icon}</span>
+                  <span
+                     className='block sm:hidden'
+                     title={navItem.name}
+                  >
+                     {navItem.icon}
+                  </span>
                   <span className='hidden sm:block text-sm'>{navItem.name}</span>
                </Link>
             ))}

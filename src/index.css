@@ -2,14 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&family=Roboto:wght@500&display=swap');
-@import './data/styles.css';
 
 @layer base {
    * {
-      @apply box-border p-0 m-0 scroll-smooth;
+      @apply p-0 m-0 scroll-smooth  box-border;
    }
 
    body {
-      @apply bg-black;
+      @apply bg-black text-white min-h-screen flex flex-col justify-stretch;
    }
 }

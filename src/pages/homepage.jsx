@@ -93,9 +93,13 @@ const Homepage = () => {
                <div className='homepage-container'>
                   <div className='homepage-first-area'>
                      <div className='homepage-first-area-left-side'>
-                        <div className='title homepage-title text-white'>{INFO.homepage.title}</div>
+                        <div className=' text-slate-100 sm:text-white text-3xl sm:text-4xl font-extrabold opacity-100 z-50 stroke-'>
+                           {INFO.homepage.title}
+                        </div>
 
-                        <div className='subtitle homepage-subtitle text-white'>{INFO.homepage.description}</div>
+                        <div className='subtitle homepage-subtitle text-white text-xl z-50 font-mono font-medium'>
+                           {INFO.homepage.description}
+                        </div>
                      </div>
 
                      <div className='homepage-first-area-right-side'>
@@ -104,7 +108,7 @@ const Homepage = () => {
                               <img
                                  src='/homepage.jpg'
                                  alt='about'
-                                 className='homepage-image'
+                                 className='homepage-image max-sm:opacity-90'
                               />
                            </div>
                         </div>
