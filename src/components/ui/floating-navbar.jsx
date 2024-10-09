@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence, useScroll, useMotionValueEvent } from 'framer-motion';
 import { cn } from '../../lib/utils';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 export const FloatingNav = ({ navItems, className }) => {
    const { scrollYProgress } = useScroll();
 
    const [visible, setVisible] = useState(true);
+   const { pathname } = useLocation();
+   console.log(pathname);
 
    useMotionValueEvent(scrollYProgress, 'change', (current) => {
       // Check if current is not undefined and is a number
@@ -44,23 +46,30 @@ export const FloatingNav = ({ navItems, className }) => {
                className
             )}
          >
-            {navItems.map((navItem, idx) => (
-               <Link
-                  key={`link=${idx}`}
-                  to={navItem.link}
-                  className={cn(
-                     'relative dark:text-neutral-50 items-center flex space-x-1 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500'
-                  )}
-               >
-                  <span
-                     className='block sm:hidden'
-                     title={navItem.name}
+            {navItems.map((navItem, idx) => {
+               let isActive = navItem.link === pathname;
+               console.log(isActive);
+
+               return (
+                  <Link
+                     key={`link=${idx}`}
+                     to={navItem.link}
+                     className={cn(
+                        `relative dark:text-neutral-50 items-center flex space-x-1 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500 
+                        ${isActive ? 'bg-cyan-400 px-1 rounded-md text-white font-bold underline' : ''}
+                        `
+                     )}
                   >
-                     {navItem.icon}
-                  </span>
-                  <span className='hidden sm:block text-sm'>{navItem.name}</span>
-               </Link>
-            ))}
+                     <span
+                        className='block sm:hidden'
+                        title={navItem.name}
+                     >
+                        {navItem.icon}
+                     </span>
+                     <span className='hidden sm:block text-sm'>{navItem.name}</span>
+                  </Link>
+               );
+            })}
          </motion.div>
       </AnimatePresence>
    );
